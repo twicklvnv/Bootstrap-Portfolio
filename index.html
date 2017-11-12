@@ -6,6 +6,8 @@
 		<title>Portfolio for Tom Wickham</title>
 		<!--<link rel="stylesheet" type="text/css" href="./assets/css/reset.css">-->
 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -17,16 +19,17 @@
 	</head>
 
 	<body>
-		<div class="container mainContent">
-			<div class="row">
+		<!--<div class="container">
+			<div class="row">-->
 				<!--<div class="col-md-offset-2 col-md-8">-->
 
-			<nav class="navbar navbar-default navbar-fixed-top">
+<!--code for the navbar, title, and navbar links-->
+		<nav class="navbar navbar-default">
   
-  			<!--<div class="container-fluid mainContent">-->
+  			<div class="container">
     			<div class="navbar-header">
     				<h1>Thomas A Wickham</h1>
-      				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#internalNavLinks">
+      				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#internalNavLinks">
         			<span class="icon-bar"></span>
         			<span class="icon-bar"></span>
         			<span class="icon-bar"></span>
@@ -37,18 +40,19 @@
       				<ul class="nav navbar-nav navbar-right">
             			<li><a href="./index.html">About</a></li>
             			<li><a href="./portfolio.html">Portfolio</a></li>
-            			<li><a href="contact.html">Contact</a></li>
+            			<li><a href="./contact.html">Contact</a></li>
       				</ul>
     			</div>
   			</div>
-			</nav>
-		</div>
-		</div>
+		</nav>
+		<!--</div>
+		</div>-->
+
+<!--code for the main content panel, image, and paragraph-->
 		<div class="container mainContent">
-			
 			<div class="row">
 				<div class="col-md-8 mainWindow">
-					<div class="panel panel-defualt">
+					<div class="panel">
 						<div class="panel-heading">
 						<h2>About Me</h2>
 						</div>
@@ -69,32 +73,33 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4 sidebar">
-				<div class="panel panel-default">
+
+<!--code for the sidebar panel and links-->
+			<div class="col-md-offset-1 col-md-3 sidebar">
+				<div class="panel">
   					<div class="panel-heading sidebarTitle">
     					<h3>Connect with Me</h3>
   					</div>
   					<div class="panel-body">
-    					<a href="https://github.com/twicklvnv" target="_blank">
+    					<a class="external" href="https://github.com/twicklvnv" target="_blank">
     						<img class="logo logo-1" src="https://image.freepik.com/free-icon/github-logo-black-shape_318-52922.jpg" alt="github logo" width="50" height="50">
 						</a>
-						<a href="https://www.linkedin.com/in/thomas-wickham-169573151/" target="_blank">
-						<img class="logo logo-2" src="http://www.martinbennett.biz/wp-content/uploads/2017/01/transparent-Linkedin-logo-icon.png" alt="linked in logo" width="50" height="50">
-					</a>
-					<a class="external" href="https://stackoverflow.com/users/8738740/tom-wickham?tab=profile" target="_blank">
-						<img class="logo logo-3" src="https://www.iconsdb.com/icons/preview/orange/stackoverflow-6-xxl.png" alt="stack overflow logo" width="50" height="50">
-					</a>
-
+						<a class="external" href="https://www.linkedin.com/in/thomas-wickham-169573151/" target="_blank">
+							<img class="logo logo-2" src="http://www.martinbennett.biz/wp-content/uploads/2017/01/transparent-Linkedin-logo-icon.png" alt="linked in logo" width="50" height="50">
+						</a>
+						<a class="external" href="https://stackoverflow.com/users/8738740/tom-wickham?tab=profile" target="_blank">
+							<img class="logo logo-3" src="https://www.iconsdb.com/icons/preview/orange/stackoverflow-6-xxl.png" alt="stack overflow logo" width="50" height="50">
+						</a>
   					</div>
 				</div>
 			</div>
-			</div	
-		</div>
+		</div>	
+	</div>
 
 
-
+<!--code for the footer-->
 			<footer>
-				<p>copyright &#169 2017 Thomas A. Wickham</p>
+				<p class="paraFoot">copyright &#169 2017 Thomas A. Wickham</p>
 			</footer>
 
 

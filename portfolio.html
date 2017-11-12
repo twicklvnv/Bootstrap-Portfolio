@@ -6,6 +6,8 @@
 		<title>Portfolio for Tom Wickham</title>
 		<!--<link rel="stylesheet" type="text/css" href="./assets/css/reset.css">-->
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -18,77 +20,119 @@
 
 	<body>
 
-		<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Thomas A Wickham</a>
-    </div>
+		<!--<div class="container">
+      <div class="row">-->
+        <!--<div class="col-md-offset-2 col-md-8">-->
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-            <li><a href="./index.html">About</a></li>
-            <li><a href="./portfolio.html">Portfolio</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+<!--code for the navbar, nabvar title and navbar links-->
+      <nav class="navbar navbar-default">
+  
+        <div class="container header">
+          <div class="navbar-header">
+            <h1>Thomas A Wickham</h1>
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#internalNavLinks">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              </button>
+          </div>
 
+          <div class="collapse navbar-collapse" id="internalNavLinks">
+              <ul class="nav navbar-nav navbar-right">
+                  <li><a href="./index.html">About</a></li>
+                  <li><a href="./portfolio.html">Portfolio</a></li>
+                  <li><a href="./contact.html">Contact</a></li>
+              </ul>
+          </div>
+        </div>
+    </nav>
+
+<!--code for the main content window and portfolio images-->
+    <div class="container mainContent">
       <div class="row">
         <div class="col-md-8 mainWindow">
-          <div class="panel panel-default">
+          <div class="panel">
+            <div class="panel-heading">
+            <h2>Portfolio</h2>
+            </div>
             <div class="panel-body">
               <div class="row">
                 <div class="col-md-6">
+                  <figure>
                   <img src="http://lorempixel.com/output/technics-q-c-640-480-3.jpg" alt="Portfolio 1" width="200" height="200">
+                  <figcaption>Portfolio 1</figcaption>
+                  </figure>
                 </div>
                 <div class="col-md-6">
+                  <figure>
                   <img src="http://lorempixel.com/output/technics-q-c-640-480-6.jpg" alt="Portfolio 2" width="200" height="200">
+                  <figcaption>Portfolio 2</figcaption>
+                  </figure>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-6">
+                  <figure>
                   <img src="http://lorempixel.com/output/city-q-c-640-480-3.jpg" alt="Portfolio 3" width="200" height="200">
+                  <figcaption>Portfolio 3</figcaption>
+                  </figure>
                 </div>
                 <div class="col-md-6">
+                  <figure>
                   <img src="http://lorempixel.com/output/transport-q-c-640-480-7.jpg" alt="Portfolio 4" width="200" height="200">
+                  <figcaption>Portfolio 4</figcaption>
+                  </figure>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-6">
+                  <figure>
                     <img src="http://lorempixel.com/output/sports-q-c-640-480-6.jpg" alt="Portfolio 5" width="200" height="200">
+                    <figcaption>Portfolio 5</figcaption>
+                    </figure>
                 </div>
                 <div class="col-md-6">
+                  <figure>
                   <img src="http://lorempixel.com/output/technics-q-c-640-480-1.jpg" alt="Portfolio 6" width="200" height="200">
+                  <figcaption>Portfolio 6</figcaption>
+                  </figure>
                 </div>
               </div>
             </div>
           </div>
         </div>
+     <!-- </div>-->
+  
+<!--code for the sidebar panel and links-->
+            <div class="col-md-offset-1 col-md-3 sidebar">
+              <div class="panel">
+                <div class="panel-heading sidebarTitle">
+                  <h3>Connect with Me</h3>
+                </div>
+              <div class="panel-body">
+                <a class="external" href="https://github.com/twicklvnv" target="_blank">
+                  <img class="logo logo-1" src="https://image.freepik.com/free-icon/github-logo-black-shape_318-52922.jpg" alt="github logo" width="50" height="50">
+                </a>
+                <a class="external" href="https://www.linkedin.com/in/thomas-wickham-169573151/" target="_blank">
+                  <img class="logo logo-2" src="http://www.martinbennett.biz/wp-content/uploads/2017/01/transparent-Linkedin-logo-icon.png" alt="linked in logo" width="50" height="50">
+                </a>
+                <a class="external" href="https://stackoverflow.com/users/8738740/tom-wickham?tab=profile" target="_blank">
+                  <img class="logo logo-3" src="https://www.iconsdb.com/icons/preview/orange/stackoverflow-6-xxl.png" alt="stack overflow logo" width="50" height="50">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
-            
-            
+    </div>
 
 
 
 
 
-
-
-
-
-
+<!--code for the footer-->
             <footer>
-               <p>copyright &#169 2017 Thomas A. Wickham</p>
+               <p class="paraFoot">copyright &#169 2017 Thomas A. Wickham</p>
             </footer>
 
 
